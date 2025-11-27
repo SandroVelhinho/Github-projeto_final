@@ -1,9 +1,9 @@
 # Relatório Final - Página Colaborativa de Receitas
 
 ## Integrantes do Grupo
-- Nome do projeto:
-- Integrantes:
-- Repositório: [link]
+- Nome do projeto: receitas-grupoN
+- Integrantes: - Sandro Velhinho nª2024509 / Tomas Leitão nº2024506
+- Repositório: [https://github.com/SandroVelhinho/Github-projeto_final]
 
 ## Branches Criadas
 - Descreva as branches criadas e o objetivo de cada uma.
