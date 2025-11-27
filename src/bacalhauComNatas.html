@@ -12,11 +12,92 @@
     <li>Sal e pimenta a gosto</li>
 </ul>
 <h2>Modo de Preparo:</h2>
-<ol>
-    <li>Cozinhe as batatas e corte em rodelas.</li>
-    <li>Refogue a cebola e o alho no azeite.</li>
-    <li>Adicione o bacalhau desfiado e misture bem.</li>
-    <li>Em um refratário, faça camadas de batata e a mistura de bacalhau.</li>
-    <li>Finalize com as natas por cima.</li>
-    <li>Leve ao forno até dourar.</li>
-</ol>
+<style>
+    .preparo {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 800px;
+        background: #fffdfa;
+        border: 1px solid #eee;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .meta {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 12px;
+    }
+    .steps {
+        counter-reset: passo;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .steps li {
+        list-style: none;
+        margin: 10px 0;
+        padding-left: 40px;
+        position: relative;
+        line-height: 1.4;
+    }
+    .steps li::before {
+        counter-increment: passo;
+        content: counter(passo);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #e76f51;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .notes {
+        margin-top: 14px;
+        font-size: 0.95rem;
+        color: #333;
+        background: #f7f7f7;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .notes h3 { margin: 6px 0; font-size: 1rem; }
+    .small { font-size: 0.85rem; color: #666; }
+</style>
+
+<section class="preparo" aria-labelledby="modo-preparo">
+    <p id="modo-preparo" class="small"><strong>Modo de Preparo:</strong></p>
+
+    <p class="meta">
+        <strong>Tempo de preparo:</strong> 25 min —
+        <strong>Tempo de forno:</strong> 30–40 min (180ºC) —
+        <strong>Rendimento:</strong> 4 porções —
+        <strong>Dificuldade:</strong> Média
+    </p>
+
+    <ol class="steps">
+        <li><strong>Preparar as batatas:</strong> Cozinhe as batatas com casca até ficarem macias (15–20 min). Deixe esfriar um pouco e corte em rodelas finas.</li>
+        <li><strong>Refogar:</strong> Em uma frigideira grande, aqueça 2–3 colheres de sopa de azeite, refogue a cebola fatiada até ficar translúcida e acrescente 2 dentes de alho picados; refogue mais 1–2 min.</li>
+        <li><strong>Incorporar o bacalhau:</strong> Adicione o bacalhau desfiado ao refogado, aqueça e misture bem. Ajuste o sal com cuidado (o bacalhau pode já ser salgado) e tempere com pimenta-do-reino.</li>
+        <li><strong>Montar em camadas:</strong> Em um refratário untado, coloque uma camada de batatas, depois a mistura de bacalhau e repita até terminar os ingredientes. Salpique noz-moscada ralada (opcional).</li>
+        <li><strong>Adicionar as natas:</strong> Misture as natas com um pouco de leite (opcional, para render mais) e despeje por cima, cobrindo as camadas. Para uma cobertura dourada, polvilhe queijo ralado por cima.</li>
+        <li><strong>Assar:</strong> Leve ao forno preaquecido a 180°C por 30–40 minutos, até borbulhar e dourar levemente na superfície.</li>
+    </ol>
+
+    <div class="notes">
+        <h3>Dicas e variações</h3>
+        <ul>
+            <li>Se usar bacalhau salgado, dessalgue em água fria por 24–48 horas trocando a água algumas vezes.</li>
+            <li>Para mais cremosidade, adicione 1 gema de ovo às natas antes de cobrir.</li>
+            <li>Variante: acrescente cebola caramelizada ou ervilhas para textura e sabor diferentes.</li>
+        </ul>
+
+        <h3>Conservação</h3>
+        <p class="small">Guarde na geladeira por até 3 dias em recipiente fechado. Reaqueça em forno ou micro-ondas até aquecer por completo.</p>
+
+        <h3>Informação nutricional (aprox.)</h3>
+        <p class="small">Por porção: 450 kcal • 28 g proteína • 28 g gordura • 22 g carboidratos (valores estimados).</p>
+    </div>
+</section>
