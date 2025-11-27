@@ -1,2 +1,190 @@
-<!-- Página inicial do projeto -->
-<h1>Página Colaborativa de Receitas</h1>
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Receita: Pão de Queijo</title>
+    <style>
+      :root {
+        --bg: #fff;
+        --card: #f8f8f8;
+        --accent: #d35400;
+        --text: #222;
+      }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto,
+          "Helvetica Neue", Arial;
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 760px;
+        margin: 32px auto;
+        padding: 20px;
+      }
+      header {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      .hero {
+        width: 96px;
+        height: 96px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #ffd, #fff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.6rem;
+      }
+      .meta {
+        color: #666;
+        font-size: 0.95rem;
+        margin-top: 6px;
+      }
+      .card {
+        background: var(--card);
+        padding: 18px;
+        border-radius: 12px;
+        margin-top: 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+      }
+      ul {
+        padding-left: 1.1rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .steps ol {
+        padding-left: 1.2rem;
+      }
+      .small {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      footer {
+        margin-top: 20px;
+        font-size: 0.85rem;
+        color: #666;
+      }
+      @media (max-width: 640px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div class="hero">🥐</div>
+        <div>
+          <h1>Pão de Queijo (Receita Simples)</h1>
+          <div class="meta">
+            Rendimento: 20–24 unidades • Tempo total: ~45 min
+          </div>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2>Ingredientes</h2>
+        <div class="grid">
+          <div>
+            <ul>
+              <li>250 g polvilho doce</li>
+              <li>250 g polvilho azedo (ou 500 g de um único tipo)</li>
+              <li>200 ml leite</li>
+              <li>100 ml óleo vegetal</li>
+              <li>2 ovos médios</li>
+              <li>200 g queijo meia-cura ralado (ou parmesão)</li>
+              <li>Sal a gosto (± 1 colher de chá)</li>
+            </ul>
+          </div>
+          <div>
+            <p class="small">
+              Nota: podes substituir parte do queijo por queijo parmesão para um
+              sabor mais intenso. Para versão sem lactose, usa queijo vegano e
+              aumenta um pouco o sal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card steps">
+        <h2>Modo de Preparo</h2>
+        <ol>
+          <li>
+            Preaquece o forno a 200°C e forra um tabuleiro com papel vegetal.
+          </li>
+          <li>
+            Ferve o leite com o óleo e um pouco de sal. Assim que levantar
+            fervura, retira do lume.
+          </li>
+          <li>
+            Numa tigela grande, mistura os polvilhos. Verte o líquido quente por
+            cima, mexendo com uma colher até arrefecer ligeiramente.
+          </li>
+          <li>
+            Adiciona os ovos, um a um, misturando bem. Quando a massa estiver
+            amena, incorpora o queijo ralado. Se necessário, amassa com as mãos
+            (massinha pega — é normal).
+          </li>
+          <li>
+            Forma bolinhas do tamanho desejado (± 3–4 cm). Podes untar as mãos
+            com óleo para facilitar.
+          </li>
+          <li>
+            Coloca as bolinhas no tabuleiro e leva ao forno por 15–20 minutos,
+            ou até crescerem e ficarem douradas por fora.
+          </li>
+          <li>
+            Retira do forno e serve quente. O interior deve ficar leve e macio.
+          </li>
+        </ol>
+        <p class="small">
+          Dica: para pães mais crocantes por fora, aumenta a temperatura dos 5
+          últimos minutos para 220°C.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Variações & Armazenamento</h2>
+        <ul>
+          <li>
+            Podes congelar as bolinhas cruas em bandeja e depois guardar num
+            saco. Cozinha congelado por +5 minutos no forno.
+          </li>
+          <li>
+            Substitui parte do polvilho por polvilho de mandioca torrado para
+            textura diferente.
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>
+          Gostaste desta receita?
+          <a class="btn" href="#" onclick="window.print();return false"
+            >Imprimir</a
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
